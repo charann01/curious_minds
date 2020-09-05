@@ -1,0 +1,37 @@
+{% extends './base.html' %}
+  {% block bodyblock %}
+    <form class="search-form" method="POST">
+      {% csrf_token %}
+      <input id="search-input" type="text" name="book name" placeholder="Enter Book Name:">
+      <br>
+      <br>
+      <button class="btn btn-dark" type="submit">Search</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    {% if books %}
+    <table class="table">
+      <thead class="thead-dark">
+        <th>Name</th>
+        <th>Price</th>
+        <th>Author Name</th>
+        <th>Genre</th>
+        <th>View Detail</th>
+    </thead>
+      <tbody>
+        {% for book in books %}
+          <tr>
+            <td>{{ book.bookname }}</td>
+            <td>{{ book.price }}</td>
+            {% for author in book.author_name.all %}
+              <td>{{ author }}</td>
+            {% endfor %}
+            <td>{{ book.genre }}</td>
+            <td><a href="/books/detail/{{ book.id }}"><button class="btn btn-outline-warning" type="button">Detail</button></a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+  </table>
+    {% endif %}
+  {% endblock %}

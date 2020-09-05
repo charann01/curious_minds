@@ -1,0 +1,10 @@
+{% extends './base.html' %}
+  {% block bodyblock %}
+  <br>
+    <h2 align="center">Add New Book to Library</h2>
+    <form class="create-form" method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button class="btn btn-dark">Create</button>
+    </form>
+  {% endblock %}

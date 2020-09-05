@@ -1,0 +1,27 @@
+.nav-elements{
+
+  margin-right:2%;
+  background: None;
+  padding: 5px;
+  border-radius: 10px;
+  width:7%;
+  text-align: center;
+
+}
+
+#header{
+  font-family: 'Bree Serif', serif;
+  margin-top:2%;
+  margin-left:33%;
+  margin-bottom: 10%;
+}
+
+h3{
+  margin-left: 22%;
+}
+body{
+
+    background-color: #FFC300  !important;
+
+}
+

@@ -1,0 +1,39 @@
+.search-form{
+
+  margin:5%;
+  padding:2px;
+  text-align: center;
+
+}
+
+.nav-elements{
+
+  margin-right:2%;
+  background: None;
+  padding: 5px;
+  border-radius: 10px;
+  width:7%;
+  text-align: center;
+
+}
+
+#search-input{
+
+  padding:2px;
+  border-radius: 10px;
+}
+
+.create-form{
+
+  margin-right:25%;
+  margin-top:2%;
+  margin-left:25%;
+  padding:5%;
+  text-align: center;
+  border-radius:20px;
+
+}
+
+body{
+  background-color: #FFC300 !important;
+}
